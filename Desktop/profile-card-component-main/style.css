@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,700;1,700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --veryDark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-grey: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--Dark-cyan);
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: url(/images/bg-pattern-top.svg);
+  transform: rotate(180deg);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  background: url(/images/bg-pattern-bottom.svg);
+  width: 450px;
+  height: 400px;
+  transform: rotate(4deg);
+}
+
+.container {
+  width: 300px;
+  height: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px;
+  border-radius: 10px;
+}
+
+.head {
+  height: 35%;
+  width: 100%;
+  background-image: url(/images/bg-pattern-card.svg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+img {
+  border-radius: 50%;
+
+  border-style: solid;
+  border-color: white;
+  margin-top: -20%;
+}
+
+.user-info {
+  width: 100%;
+  height: 40%;
+  background: white;
+}
+
+.nationality {
+  padding-right: 4px;
+  font-size: 17px;
+}
+
+span {
+  color: var(--Dark-grey);
+}
+
+.age {
+  font-weight: 300;
+}
+
+.social-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 25%;
+  background-color: white;
+  border-top: 1px solid var(--Dark-grey);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+}
+
+.social-info div {
+  text-align: center;
+}
+
+.social-info h4 {
+  font-weight: 600;
+}
