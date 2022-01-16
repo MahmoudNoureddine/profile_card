@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,700;1,700&display=swap");
+
+:root {
+  --Bright-Orange: hsl(31, 77%, 52%); /*Sedans section color*/
+  --Dark-Cyan: hsl(184, 100%, 22%); /**/
+  --Very-Dark-Cyan: hsl(179, 100%, 13%); /**/
+  --Transparent-White: hsla(0, 0%, 100%, 0.75); /*paragraphs colors*/
+  --Very-Light-Gray: hsl(
+    0,
+    0%,
+    95%
+  ); /*colors used for [background - heading - button]*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-Light-Gray);
+  font-size: 15px;
+}
+
+.container {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  border: 1px;
+  border-radius: 10px;
+}
+
+.sedans {
+  background-color: var(--Bright-Orange);
+  border-top-left-radius: 10px;
+}
+
+.suv {
+  background-color: var(--Dark-Cyan);
+}
+
+.luxury {
+  background-color: var(--Very-Dark-Cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.content {
+  padding: 40px;
+}
+
+h1,
+p,
+button {
+  color: var(--Very-Light-Gray);
+}
+
+img {
+  padding-bottom: 20px;
+  width: 100px;
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-family: Big Shoulders Display;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+p {
+  margin-bottom: 60px;
+  font-family: Lexend Deca;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+button {
+  /* margin-top: 100px; */
+  color: black;
+  width: 200px;
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+}
+
+.luxury button {
+  margin-top: 5px;
+
+  color: var(--Very-Dark-Cyan);
+  letter-spacing: 1px;
+}
+
+.suv button {
+  color: var(--Dark-Cyan);
+  letter-spacing: 1px;
+}
+
+.sedans button {
+  color: var(--Bright-Orange);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
