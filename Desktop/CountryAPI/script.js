@@ -34,3 +34,4 @@ const getCountry = function(country) {
 
 getCountry('lebanon');
 getCountry('sweden');
+getCountry('germany');
